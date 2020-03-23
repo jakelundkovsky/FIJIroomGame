@@ -152,7 +152,8 @@ app.post('/roomGame', function(req, res) {
     if (choice === "Ink") {
       //ink the player
       ink(playerId);
-    } else if (choice !== "Pass") {
+    } else if (choice !== "Pass" && (typeof choice !== 'undefined')) {
+      console.log(choice);
       //move the player to given room
       switchToRoom(playerId, choice);
     }
