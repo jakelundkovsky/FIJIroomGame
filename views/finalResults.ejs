@@ -1,0 +1,20 @@
+<%- include('partials/header'); %>
+
+<h2>Final Rooms:</h2>
+
+
+<%Object.entries(rooms).forEach(function(room) {%>
+  <h3><%=room[0]%></h3>
+  <ul>
+    <%room[1].occupants.forEach(function(id) {%>
+      <li><%=players[id].name%></li>
+    <%});%>
+  </ul>
+<%});%>
+
+<form action="/finalResults" method="post">
+  <button class="btn btn-danger" type="submit">Reset Game</button>
+</form>
+
+
+<%- include('partials/footer'); %>
