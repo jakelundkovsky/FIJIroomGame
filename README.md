@@ -5,7 +5,7 @@ If you haven't installed Node.js, do so now
 https://nodejs.org/en/download/
 ```
 
-Clone the repository. (Click clone, copy the link, then...)
+Clone the repository. (Click clone, copy the link, then in your terminal run...)
 ```
 git clone [INSERT LINK HERE]
 ```
